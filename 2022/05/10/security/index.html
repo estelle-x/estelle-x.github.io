@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Archives | Hexo</title>
+  <title>security | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="认证授权不同的用户有不同的使用功能。 授权基本流程 在springsecurity中，会使用默认的FilterSecurityInterceptor来进行权限校验。在FilterSecurityInterceptor中会从SecurityContextHolder中获取其中的Authentication，然后获取其中的权限信息。当前用户是否拥有访问资源所需的权限。 所以我们在项目中只需要把当前登录">
+<meta property="og:type" content="article">
+<meta property="og:title" content="security">
+<meta property="og:url" content="http://example.com/2022/05/10/security/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="认证授权不同的用户有不同的使用功能。 授权基本流程 在springsecurity中，会使用默认的FilterSecurityInterceptor来进行权限校验。在FilterSecurityInterceptor中会从SecurityContextHolder中获取其中的Authentication，然后获取其中的权限信息。当前用户是否拥有访问资源所需的权限。 所以我们在项目中只需要把当前登录">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-05-10T06:07:49.200Z">
+<meta property="article:modified_time" content="2022-05-10T10:10:39.958Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -69,96 +73,65 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2022" class="archive-year">2022</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/05/10/hello-world/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-05-10T09:38:23.973Z" itemprop="datePublished">May 10</time>
+        <section id="main"><article id="post-security" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/10/security/" class="article-date">
+  <time class="dt-published" datetime="2022-05-10T06:07:49.200Z" itemprop="datePublished">2022-05-10</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/05/10/hello-world/">Hello World</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      security
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/05/10/shell/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-05-10T06:15:39.264Z" itemprop="datePublished">May 10</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/05/10/shell/">shell</a>
-    </h1>
-  
+        <h3 id="认证"><a href="#认证" class="headerlink" title="认证"></a>认证</h3><h3 id="授权"><a href="#授权" class="headerlink" title="授权"></a>授权</h3><p>不同的用户有不同的使用功能。</p>
+<p>授权基本流程</p>
+<p>在springsecurity中，会使用默认的FilterSecurityInterceptor来进行权限校验。在FilterSecurityInterceptor中会从SecurityContextHolder中获取其中的Authentication，然后获取其中的权限信息。当前用户是否拥有访问资源所需的权限。</p>
+<p>所以我们在项目中只需要把当前登录用户的权限信息，存入Authentication，然后设置我们的资源所需要的权限即可。</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/05/10/security/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-05-10T06:07:49.200Z" itemprop="datePublished">May 10</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/05/10/security/">security</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/05/10/redis/" class="archive-article-date">
-  <time class="dt-published" datetime="2022-05-10T06:07:21.121Z" itemprop="datePublished">May 10</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/10/security/" data-id="cl2zzti410003l8va8pl864jc" data-title="security" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2022/05/10/redis/">redis</a>
-    </h1>
-  
-
-    </header>
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/05/10/shell/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          shell
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/05/10/redis/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">redis</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
