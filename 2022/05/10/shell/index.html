@@ -1,21 +1,11 @@
-
-
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
+<html lang=zh>
 <head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
-  <link rel="icon" href="/img/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="estelle">
-  <meta name="keywords" content="">
-  
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
     <meta name="description" content="shell">
 <meta property="og:type" content="article">
 <meta property="og:title" content="shell">
@@ -23,412 +13,333 @@
 <meta property="og:site_name" content="Estelle">
 <meta property="og:description" content="shell">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/img/shell.jpg">
 <meta property="article:published_time" content="2022-05-10T06:15:39.264Z">
-<meta property="article:modified_time" content="2022-05-10T13:31:24.319Z">
+<meta property="article:modified_time" content="2022-05-23T13:26:53.335Z">
 <meta property="article:author" content="estelle">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://example.com/img/shell.jpg">
-  
-  
-  <title>shell - Estelle</title>
-
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
-
-
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4/github-markdown.min.css" />
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hint.css@2/hint.min.css" />
-
-  
+<meta name="twitter:card" content="summary">
     
     
       
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10/styles/github-gist.min.css" />
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
     
-  
+    <!-- title -->
+    <title>shell</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
 
-  
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css" />
-  
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-<!-- 自定义样式保持在最底部 -->
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.14","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
 <meta name="generator" content="Hexo 6.1.0"></head>
 
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="القائمة"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="القائمة"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="الأعلى" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">项目</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="上一篇" href="/2022/05/10/hello-world/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="下一篇" href="/2022/05/10/security/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="返回顶部" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="分享文章" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">上一篇</span>
+      <span id="i-next" class="info" style="display:none;">下一篇</span>
+      <span id="i-top" class="info" style="display:none;">返回顶部</span>
+      <span id="i-share" class="info" style="display:none;">分享文章</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2022/05/10/shell/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2022/05/10/shell/&text=shell"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2022/05/10/shell/&title=shell"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2022/05/10/shell/&is_video=false&description=shell"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=shell&body=Check out this article: http://example.com/2022/05/10/shell/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2022/05/10/shell/&title=shell"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2022/05/10/shell/&title=shell"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2022/05/10/shell/&title=shell"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2022/05/10/shell/&title=shell"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2022/05/10/shell/&name=shell&description=shell"><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2022/05/10/shell/&t=shell"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
 
-<body>
-  <header style="height: 70vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>Fluid</strong>
-    </a>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81SHELL%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">一、SHELL介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%88%86%E7%B1%BB"><span class="toc-number">1.1.</span> <span class="toc-text">1.编程语言分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-shell%E7%AE%80%E4%BB%8B"><span class="toc-number">1.2.</span> <span class="toc-text">2.shell简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-shell%E8%84%9A%E6%9C%AC"><span class="toc-number">1.3.</span> <span class="toc-text">3.shell脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E4%BB%80%E4%B9%88%E6%98%AFshell%E8%84%9A%E6%9C%AC"><span class="toc-number">1.3.1.</span> <span class="toc-text">（一）什么是shell脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E7%94%A8%E5%88%B0%E8%84%9A%E6%9C%AC"><span class="toc-number">1.3.2.</span> <span class="toc-text">（二） 什么时候用到脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89shell%E8%84%9A%E6%9C%AC%E8%83%BD%E5%B9%B2%E5%95%A5"><span class="toc-number">1.3.3.</span> <span class="toc-text">（三）shell脚本能干啥</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0shell%E8%84%9A%E6%9C%AC"><span class="toc-number">1.3.4.</span> <span class="toc-text">（四）如何学习shell脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E5%AD%A6%E4%B9%A0shell%E8%84%9A%E6%9C%AC%E7%9A%84%E7%A7%98%E8%AF%80"><span class="toc-number">1.3.5.</span> <span class="toc-text">（五）学习shell脚本的秘诀</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%85%AD%EF%BC%89shell%E8%84%9A%E6%9C%AC%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%86%99%E6%B3%95"><span class="toc-number">1.3.6.</span> <span class="toc-text">（六）shell脚本的基本写法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%83%EF%BC%89shell%E8%84%9A%E6%9C%AC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.7.</span> <span class="toc-text">（七）shell脚本的执行方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%8F%98%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.</span> <span class="toc-text">二、变量的定义</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%8F%98%E9%87%8F%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">2.1.</span> <span class="toc-text">1.  变量是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E9%9C%80%E8%A6%81%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F"><span class="toc-number">2.2.</span> <span class="toc-text">2. 什么时候需要定义变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%8F%98%E9%87%8F%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89"><span class="toc-number">2.3.</span> <span class="toc-text">3. 变量如何定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%8F%98%E9%87%8F%E5%AE%9A%E4%B9%89%E7%9A%84%E8%A7%84%E5%88%99"><span class="toc-number">2.4.</span> <span class="toc-text">4. 变量定义的规则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8F%98%E9%87%8F%E5%90%8D%E4%B8%A5%E6%A0%BC%E5%8C%BA%E5%88%86%E5%A4%A7%E5%B0%8F%E5%86%99"><span class="toc-number">2.4.1.</span> <span class="toc-text">(一)  变量名严格区分大小写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%8F%98%E9%87%8F%E5%90%8D%E4%B8%8D%E8%83%BD%E6%9C%89%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7"><span class="toc-number">2.4.2.</span> <span class="toc-text">(二) 变量名不能有特殊符号</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
 
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        shell
+    </h1>
 
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">estelle</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-05-10T06:15:39.264Z" itemprop="datePublished">2022-05-10</time>
         
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/">
-                <i class="iconfont icon-home-fill"></i>
-                首页
-              </a>
-            </li>
-          
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="一、SHELL介绍"><a href="#一、SHELL介绍" class="headerlink" title="一、SHELL介绍"></a>一、SHELL介绍</h1><p>前言：</p>
+<p>计算机只能认识（识别）机器语言(0和1)，如（11000000 这种）。但是，我们的程序猿们不能直接去写01这样的代码，所以，要想将程序猿所开发的代码在计算机上运行，就必须找”人”（工具）来<font color="orange">翻译成机器语言</font>，这个”人”(工具)就是我们常常所说的<font color="orange"><strong>编译器</strong></font>或者<font color="orange"><strong>解释器</strong></font>。</p>
+<h2 id="1-编程语言分类"><a href="#1-编程语言分类" class="headerlink" title="1.编程语言分类"></a>1.编程语言分类</h2><h2 id="2-shell简介"><a href="#2-shell简介" class="headerlink" title="2.shell简介"></a>2.shell简介</h2><h2 id="3-shell脚本"><a href="#3-shell脚本" class="headerlink" title="3.shell脚本"></a>3.shell脚本</h2><h3 id="（一）什么是shell脚本"><a href="#（一）什么是shell脚本" class="headerlink" title="（一）什么是shell脚本"></a>（一）什么是shell脚本</h3><h3 id="（二）-什么时候用到脚本"><a href="#（二）-什么时候用到脚本" class="headerlink" title="（二） 什么时候用到脚本"></a>（二） 什么时候用到脚本</h3><p><strong>重复化、</strong>复杂化的工作，通过把工作的命令写成脚本，以后仅仅需要执行脚本就可以完成这些命令</p>
+<h3 id="（三）shell脚本能干啥"><a href="#（三）shell脚本能干啥" class="headerlink" title="（三）shell脚本能干啥"></a>（三）shell脚本能干啥</h3><ol>
+<li>自动化软件部署  LAMP&#x2F;LNMP&#x2F;Tomcat……</li>
+<li>自动化管理  系统初始化脚本、批量更改主机密码、推送密钥……</li>
+<li>自动化分析处理  统计网站访问量</li>
+<li>自动化备份 数据库备份、日志转储</li>
+<li>自动化监控脚本</li>
+</ol>
+<h3 id="（四）如何学习shell脚本"><a href="#（四）如何学习shell脚本" class="headerlink" title="（四）如何学习shell脚本"></a>（四）如何学习shell脚本</h3><ol>
+<li>尽可能记忆更多的命令(记忆命令的使用功能和场景)</li>
+<li>掌握脚本的标准的格式（指定魔法字节、使用标准的执行方式运行脚本）</li>
+<li>必须<font color="Orange">熟悉掌握</font>脚本的基本语法（重点）</li>
+</ol>
+<h3 id="（五）学习shell脚本的秘诀"><a href="#（五）学习shell脚本的秘诀" class="headerlink" title="（五）学习shell脚本的秘诀"></a>（五）学习shell脚本的秘诀</h3><p>多看（看懂）–&gt; 模仿（多练）–&gt; 多思考（多写）</p>
+<h3 id="（六）shell脚本的基本写法"><a href="#（六）shell脚本的基本写法" class="headerlink" title="（六）shell脚本的基本写法"></a>（六）shell脚本的基本写法</h3><p>1）<strong>脚本第一行</strong>，魔法字符<font color="Orange"> #！</font> 指定解析器（<strong>必写</strong>）</p>
+<p><font color="Orange">#!&#x2F;bin&#x2F;bash</font> 表示一下内容使用bash解析器解析</p>
+<p>[注] 如果直接将解释器路径谢斯在脚本里，可能在某些系统就会存在找不到解释器的兼容性问题，所以可以使用：***#!&#x2F;bin&#x2F;env*** 解释器</p>
+<p>2）<strong>脚本第二部分</strong>，注释（#号）说明，对脚本的基本信息进行描述【可选】</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash">!/bin/env bash</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">以下内容是对脚本的基本信息的描述</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Name：名字</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">desc: 描述 describe</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Path: 存放路径</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Usage: 用法</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Update: 更新时间</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">下面就是脚本的具体内容</span></span><br><span class="line">commands</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
+<p>3）<strong>脚本第三部分</strong>，脚本要实现的具体代码内容</p>
+<h3 id="（七）shell脚本的执行方法"><a href="#（七）shell脚本的执行方法" class="headerlink" title="（七）shell脚本的执行方法"></a>（七）shell脚本的执行方法</h3><ul>
+<li><p>标准脚本执行方法（建议）</p>
+<p>chmod +x  xxx.sh （加权限）查看文件显示为绿色则可执行</p>
+<p><font color="red">注意：标准执行方式脚本必须要有可执行权限</font></p>
+</li>
+<li><p>非标准的执行方法（不建议）</p>
+<ol>
+<li><p>直接在命令行指定解释器执行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">bash XX.sh </span><br><span class="line">sh XX.sh</span><br><span class="line">dash XX.sh</span><br><span class="line">-X: 一般用于排错，查看脚本的执行过程 bash -x XXX.sh</span><br><span class="line">-n: 用来查看脚本的语法是否有问题 bash -n XXX.sh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用soruce 命令读取脚本文件，执行文件里的代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source XXX.sh (读取/执行 文件内容，非标准的执行方式)</span><br></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ul>
+<p>小试牛刀：写一个木有灵魂的脚本，如下：</p>
+<ol>
+<li>删除&#x2F;tmp&#x2F;目录下的所有文件 <strong>rm -rf &#x2F;tmp&#x2F;</strong>*</li>
+<li>然后在&#x2F;tmp目录里创建三个目录，分别是dir1~dir3 <strong>mkdir &#x2F;tmp&#x2F;dir{1..3}</strong></li>
+<li>拷贝&#x2F;etc&#x2F;hosts 文件到刚创建的dir1目录里， <strong>cp &#x2F;etc&#x2F;hosts &#x2F;tmp&#x2F;dir1</strong></li>
+<li>最后打印当前时间  <strong>echo “$(date+’%F %T’)”</strong></li>
+</ol>
+<h1 id="二、变量的定义"><a href="#二、变量的定义" class="headerlink" title="二、变量的定义"></a>二、变量的定义</h1><h2 id="1-变量是什么？"><a href="#1-变量是什么？" class="headerlink" title="1.  变量是什么？"></a>1.  变量是什么？</h2><p>变量是用来临时保存数据的，该数据是可以变化的数据。</p>
+<h2 id="2-什么时候需要定义变量"><a href="#2-什么时候需要定义变量" class="headerlink" title="2. 什么时候需要定义变量"></a>2. 什么时候需要定义变量</h2><ul>
+<li><p>如果某个内容需要多次使用，并且在代码中<strong>重复出现</strong>，那么可以用变量代表该内容，这样在修改内容的时候，仅仅需要修改变量的值。</p>
+</li>
+<li><p>在代码运作的过程中，可能会把某些命令的执行结果保存起来，后续代码需要使用这些结果，就可以直接使用这个变量。</p>
+</li>
+</ul>
+<h2 id="3-变量如何定义"><a href="#3-变量如何定义" class="headerlink" title="3. 变量如何定义"></a>3. 变量如何定义</h2><p>变量名 <font color="orange">&#x3D;</font> 变量值</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A=hello  定义变量</span><br><span class="line">echo $A    调用变量，美元符号</span><br><span class="line">echo $&#123;A&#125;    调用变量 </span><br><span class="line">unset A     取消变量 </span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-变量定义的规则"><a href="#4-变量定义的规则" class="headerlink" title="4. 变量定义的规则"></a>4. 变量定义的规则</h2><h3 id="一-变量名严格区分大小写"><a href="#一-变量名严格区分大小写" class="headerlink" title="(一)  变量名严格区分大小写"></a>(一)  变量名严格区分大小写</h3><h3 id="二-变量名不能有特殊符号"><a href="#二-变量名不能有特殊符号" class="headerlink" title="(二) 变量名不能有特殊符号"></a>(二) 变量名不能有特殊符号</h3><p>（？：通配符，匹配一个字符；*：通配符，任意多个字符）</p>
+<p>#B的调用，只能用$</p>
+
+  </div>
+</article>
+
+
+
         
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/">
-                <i class="iconfont icon-archive-fill"></i>
-                归档
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/">
-                <i class="iconfont icon-category-fill"></i>
-                分类
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/">
-                <i class="iconfont icon-tags-fill"></i>
-                标签
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/">
-                <i class="iconfont icon-user-fill"></i>
-                关于
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
-            </a>
-          </li>
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
-          </li>
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">首页</a></li>
+         
+          <li><a href="/about/">关于</a></li>
+         
+          <li><a href="/archives/">归档</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/probberechts">项目</a></li>
         
       </ul>
     </div>
-  </div>
-</nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="shell">
-              
-            </span>
-
-            
-              <div class="mt-3">
-  
-  
-    <span class="post-meta">
-      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-05-10 14:15" pubdate>
-        2022年5月10日 下午
-      </time>
-    </span>
-  
-</div>
-
-<div class="mt-1">
-  
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      0 字
-    </span>
-  
-
-  
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      1 分钟
-    </span>
-  
-
-  
-  
-</div>
-
-            
-          </div>
-
-          
-        </div>
-      </div>
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81SHELL%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">一、SHELL介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%88%86%E7%B1%BB"><span class="toc-number">1.1.</span> <span class="toc-text">1.编程语言分类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-shell%E7%AE%80%E4%BB%8B"><span class="toc-number">1.2.</span> <span class="toc-text">2.shell简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-shell%E8%84%9A%E6%9C%AC"><span class="toc-number">1.3.</span> <span class="toc-text">3.shell脚本</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E4%BB%80%E4%B9%88%E6%98%AFshell%E8%84%9A%E6%9C%AC"><span class="toc-number">1.3.1.</span> <span class="toc-text">（一）什么是shell脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E7%94%A8%E5%88%B0%E8%84%9A%E6%9C%AC"><span class="toc-number">1.3.2.</span> <span class="toc-text">（二） 什么时候用到脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89shell%E8%84%9A%E6%9C%AC%E8%83%BD%E5%B9%B2%E5%95%A5"><span class="toc-number">1.3.3.</span> <span class="toc-text">（三）shell脚本能干啥</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0shell%E8%84%9A%E6%9C%AC"><span class="toc-number">1.3.4.</span> <span class="toc-text">（四）如何学习shell脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E5%AD%A6%E4%B9%A0shell%E8%84%9A%E6%9C%AC%E7%9A%84%E7%A7%98%E8%AF%80"><span class="toc-number">1.3.5.</span> <span class="toc-text">（五）学习shell脚本的秘诀</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%85%AD%EF%BC%89shell%E8%84%9A%E6%9C%AC%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%86%99%E6%B3%95"><span class="toc-number">1.3.6.</span> <span class="toc-text">（六）shell脚本的基本写法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%83%EF%BC%89shell%E8%84%9A%E6%9C%AC%E7%9A%84%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.7.</span> <span class="toc-text">（七）shell脚本的执行方法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%8F%98%E9%87%8F%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-number">2.</span> <span class="toc-text">二、变量的定义</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%8F%98%E9%87%8F%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">2.1.</span> <span class="toc-text">1.  变量是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E9%9C%80%E8%A6%81%E5%AE%9A%E4%B9%89%E5%8F%98%E9%87%8F"><span class="toc-number">2.2.</span> <span class="toc-text">2. 什么时候需要定义变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%8F%98%E9%87%8F%E5%A6%82%E4%BD%95%E5%AE%9A%E4%B9%89"><span class="toc-number">2.3.</span> <span class="toc-text">3. 变量如何定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%8F%98%E9%87%8F%E5%AE%9A%E4%B9%89%E7%9A%84%E8%A7%84%E5%88%99"><span class="toc-number">2.4.</span> <span class="toc-text">4. 变量定义的规则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%8F%98%E9%87%8F%E5%90%8D%E4%B8%A5%E6%A0%BC%E5%8C%BA%E5%88%86%E5%A4%A7%E5%B0%8F%E5%86%99"><span class="toc-number">2.4.1.</span> <span class="toc-text">(一)  变量名严格区分大小写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C-%E5%8F%98%E9%87%8F%E5%90%8D%E4%B8%8D%E8%83%BD%E6%9C%89%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7"><span class="toc-number">2.4.2.</span> <span class="toc-text">(二) 变量名不能有特殊符号</span></a></li></ol></li></ol></li></ol>
     </div>
-  </header>
 
-  <main>
-    
-      
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2022/05/10/shell/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2022/05/10/shell/&text=shell"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2022/05/10/shell/&title=shell"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2022/05/10/shell/&is_video=false&description=shell"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=shell&body=Check out this article: http://example.com/2022/05/10/shell/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2022/05/10/shell/&title=shell"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2022/05/10/shell/&title=shell"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2022/05/10/shell/&title=shell"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2022/05/10/shell/&title=shell"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2022/05/10/shell/&name=shell&description=shell"><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2022/05/10/shell/&t=shell"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
 
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="d-none d-lg-block col-lg-2"></div>
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div class="py-5" id="board">
-          <article class="post-content mx-auto">
-            <!-- SEO header -->
-            <h1 style="display: none">shell</h1>
-            
-            <div class="markdown-body">
-              
-            </div>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                
-              </div>
-              
-                <p class="note note-warning">
-                  
-                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
-                  
-                </p>
-              
-              
-                <div class="post-prevnext">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2022/05/10/hello-world/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Hello World</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2022/05/10/security/">
-                        <span class="hidden-mobile">security</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
-            </div>
-
-            
-          </article>
-        </div>
-      </div>
     </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
 
-      </div>
-    
-  </div>
-</div>
-
-<!-- Custom -->
-
-
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> 菜单</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> 目录</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> 分享</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> 返回顶部</a>
     </div>
+
   </div>
 </div>
-    
 
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
     
-  </main>
-
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    
+    2016-2022
+    estelle
   </div>
-  
-
-  
-
-  
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">首页</a></li><!--
+     --><!--
+       --><li><a href="/about/">关于</a></li><!--
+     --><!--
+       --><li><a href="/archives/">归档</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/probberechts">项目</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
 </footer>
 
+    </div>
+    <!-- styles -->
 
-  <!-- SCRIPTS -->
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
   
-  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"复制到粘贴板!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "复制成功!");
+      e.clearSelection();
     })
+  })
   </script>
 
 
-<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
-<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script src="/js/main.js"></script>
 
-<!-- Plugins -->
+<!-- search -->
 
+<!-- Google Analytics -->
 
-  <script  src="/js/local-search.js" ></script>
+<!-- Baidu Analytics -->
 
+<!-- Cloudflare Analytics -->
 
+<!-- Umami Analytics -->
 
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
+<!-- Disqus Comments -->
 
-
-
-  
-
-
-
-  
-    <script  src="https://cdn.jsdelivr.net/npm/tocbot@4/dist/tocbot.min.js" ></script>
-  
-  
-    <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js" ></script>
-  
-  
-    <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4/anchor.min.js" ></script>
-  
-  
-    <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" ></script>
-  
-
-
-
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-        typing(title);
-      
-    })(window, document);
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
-<script  src="/js/boot.js" ></script>
-
+<!-- utterances Comments -->
 
 </body>
 </html>
